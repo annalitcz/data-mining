@@ -1,0 +1,12 @@
+Berikut adalah beberapa aspek yang biasanya ditampilkan dalam visualisasi Decision Tree:
+1. Node: Setiap kotak dalam pohon mewakili "node" yang menunjukkan pertanyaan atau kondisi pada fitur tertentu. Node utama di puncak adalah "root node", yang membagi data berdasarkan fitur yang paling informatif.
+2. Edges/Branches: Garis yang menghubungkan node menunjukkan jawaban dari pertanyaan atau kondisi di node tersebut. Misalnya, jika pertanyaan adalah apakah fitur 'petal length' kurang dari 2.5, maka akan ada dua cabang: satu untuk 'ya' dan satu lagi untuk 'tidak'.
+3. Leaf Nodes: Ini adalah node terakhir pada setiap cabang dan tidak memiliki cabang lebih lanjut. Leaf node menunjukkan kelas atau label yang diprediksi oleh model untuk kombinasi fitur yang mengarah ke node tersebut.
+4. Node Details: Setiap node akan menampilkan beberapa detail seperti:
+    Fitur dan nilai threshold yang digunakan untuk membagi data di node tersebut.
+    Gini index, yang merupakan metrik yang menunjukkan kemurnian node. Nilai yang lebih rendah menunjukkan kemurnian yang lebih tinggi.
+    Jumlah sampel yang jatuh ke dalam node tersebut.
+    Jumlah sampel untuk setiap kelas yang ada di node tersebut.
+    Kelas yang paling dominan di node tersebut.
+5. Warna: Node biasanya diwarnai untuk menunjukkan kelas yang dominan. Intensitas warna bisa mencerminkan proporsi kelas di node tersebut, dengan warna yang lebih gelap menunjukkan proporsi yang lebih tinggi.
+Visualisasi ini sangat berguna untuk memahami bagaimana keputusan dibuat oleh model Decision Tree dan bagaimana fitur-fitur berbeda mempengaruhi prediksi akhir. Ini juga membantu dalam mengevaluasi apakah model membuat keputusan berdasarkan intuisi yang kita harapkan dari pengetahuan domain, atau jika ada keanehan yang mungkin memerlukan penyelidikan lebih lanjut.

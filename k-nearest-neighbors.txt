@@ -1,0 +1,7 @@
+Berikut adalah penjelasan lebih detail mengenai komponen visualisasi tersebut:
+1. Warna Latar Belakang: Area berwarna pada plot menunjukkan batas keputusan yang dibuat oleh model KNN. Setiap warna berbeda mewakili salah satu kelas dari dataset Iris. Dalam dataset Iris, terdapat tiga kelas: Setosa, Versicolor, dan Virginica. Model KNN mencoba memprediksi kelas mana yang paling mungkin untuk setiap titik pada grid berdasarkan mayoritas kelas dari 3 tetangga terdekatnya.
+2. Titik-titik Data: Titik-titik yang ditampilkan adalah proyeksi data Iris asli ke dua dimensi utama yang diperoleh melalui PCA. Warna dari titik-titik ini sesuai dengan kelas sebenarnya dari data tersebut, yang membantu dalam memvisualisasikan seberapa baik batas keputusan yang dibuat oleh model KNN cocok dengan kelas sebenarnya.
+3. Aksis: Aksis horizontal dan vertikal mewakili dua komponen utama yang diperoleh dari PCA. Ini adalah dua arah utama variabilitas dalam data, yang digunakan untuk mereduksi dimensi data dari empat dimensi asli menjadi dua dimensi.
+4. Judul dan Label Aksis: Judul plot memberikan informasi tentang jenis visualisasi dan metode yang digunakan. Label pada aksis menunjukkan bahwa ini adalah dua komponen utama yang dihasilkan oleh PCA.
+
+Secara keseluruhan, visualisasi ini membantu dalam memahami bagaimana model KNN membagi ruang fitur menjadi region-region yang berbeda untuk klasifikasi, dan seberapa efektif PCA dalam mengurangi dimensi data sambil tetap mempertahankan struktur yang cukup untuk memungkinkan klasifikasi yang efektif.

@@ -1,0 +1,13 @@
+Hasil visualisasi dari kode yang telah dibuat menggunakan dataset Iris dan algoritma Naive Bayes dapat dibaca dan diinterpretasikan sebagai berikut:
+1. Plot: Grafik yang dihasilkan adalah scatter plot, di mana setiap titik mewakili sampel dari dataset Iris. Plot ini menampilkan data yang telah direduksi dimensinya menjadi dua komponen utama melalui PCA (Principal Component Analysis).
+2. Warna: Ada tiga warna yang digunakan dalam plot, yaitu 'navy', 'turquoise', dan 'darkorange'. Setiap warna mewakili satu dari tiga spesies target dalam dataset Iris, yaitu:
+'navy' untuk Iris-setosa
+'turquoise' untuk Iris-versicolor
+'darkorange' untuk Iris-virginica
+3. Titik: Setiap titik pada plot mewakili satu observasi (bunga Iris) dalam dataset. Posisi titik menunjukkan nilai dua komponen utama yang dihasilkan oleh PCA, yang merupakan representasi dari fitur asli setelah standarisasi dan reduksi dimensi.
+4. Label: Label pada plot menunjukkan spesies yang berbeda, memudahkan identifikasi visual mana titik yang termasuk ke dalam spesies tertentu.
+5. Interpretasi:
+Kluster: Jika titik-titik dari warna yang sama cenderung berkumpul bersama, ini menunjukkan bahwa model Naive Bayes berhasil membedakan spesies tersebut dari spesies lain berdasarkan fitur-fiturnya.
+Pemisahan: Seberapa jauh kelompok warna terpisah satu sama lain memberikan gambaran tentang seberapa baik model dapat membedakan antar spesies. Pemisahan yang baik antar kluster menunjukkan performa klasifikasi yang baik.
+6. Kesimpulan: Dari visualisasi ini, kamu dapat menilai secara visual seberapa efektif algoritma Naive Bayes dalam mengklasifikasikan spesies Iris berdasarkan fitur yang diberikan. Overlap antar kluster menunjukkan area di mana model mungkin mengalami kesulitan untuk membedakan antar spesies.
+Visualisasi ini sangat berguna untuk memahami performa model secara intuitif dan menentukan apakah ada kebutuhan untuk penyesuaian model atau pemilihan fitur lebih lanjut.
