@@ -10,7 +10,7 @@ Berikut adalah beberapa visualisasi yang menunjukkan insight dari data yang tela
 ![Visualisasi Data](/screenshot/naive.png)
 
 - ### K-Nearest Neighbors
-![Visualisasi Data](/screenshot/k-nearest-neighbors.png)
+![Visualisasi Data](/screenshot/K-nearest-Neighbors.png)
 
 - ### Decision Tree
 ![Visualisasi Data](/screenshot/decision-tree.png)
