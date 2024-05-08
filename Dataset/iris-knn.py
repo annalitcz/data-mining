@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.decomposition import PCA
@@ -12,12 +11,9 @@ data = load_iris()
 X = data.data
 y = data.target
 
-# Preprocessing: Normalisasi data
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
 
 # Membagi dataset menjadi data latih dan data uji
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.3, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42)
 
 # Membuat model K-nearest Neighbors
 model = KNeighborsClassifier(n_neighbors=5)
@@ -34,7 +30,7 @@ print(f"Akurasi model: {accuracy * 100:.2f}%")
 
 # Visualisasi hasil klasifikasi dengan PCA
 pca = PCA(n_components=2)
-X_reduced = pca.fit_transform(X_scaled)  # Menggunakan data yang telah dinormalisasi
+X_reduced = pca.fit_transform(X)  # Menggunakan data yang telah dinormalisasi
 
 fig = plt.figure(figsize=(12, 6))
 gs = GridSpec(1, 3, figure=fig)  # 1 baris, 3 kolom
