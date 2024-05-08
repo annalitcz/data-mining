@@ -12,7 +12,7 @@ X = data.data
 y = data.target
 
 # Membagi dataset menjadi data latih dan data uji
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42) #96.67% 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) #96.67% 
 
 # Membuat model Naive Bayes
 model = GaussianNB()
